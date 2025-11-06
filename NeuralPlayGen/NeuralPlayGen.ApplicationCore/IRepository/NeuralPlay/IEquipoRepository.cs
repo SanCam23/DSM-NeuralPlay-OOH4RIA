@@ -32,5 +32,8 @@ EquipoEN ReadOID (int id
 
 
 System.Collections.Generic.IList<EquipoEN> ReadAll (int first, int size);
+
+
+System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.EquipoEN> DameEquiposPorTorneo (int ? e_idTorneo);
 }
 }

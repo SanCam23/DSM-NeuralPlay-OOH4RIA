@@ -214,5 +214,7 @@
 		 </class>	
 		  
 		  <query name="UsuarioNHReadAllHQL">from UsuarioNH</query>
+		  <query name="UsuarioNHdameUsuariosPorEquipoHQL"><![CDATA[select u FROM UsuarioNH as u inner join u.MiembroEquipo as mem where mem.Equipo.id = :u_idEquipo]]></query>
+		  <query name="UsuarioNHdameUsuariosPorComunidadHQL"><![CDATA[select u FROM UsuarioNH as u inner join u.MiembroComunidad as mem where mem.Comunidad.id = :u_idComunidad]]></query>
 		</hibernate-mapping>
 	

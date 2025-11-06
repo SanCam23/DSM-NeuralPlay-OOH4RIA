@@ -189,9 +189,6 @@ public void Modify (SolicitudIngresoEN solicitudIngreso)
 
                 solicitudIngresoNH.FechaSolicitud = solicitudIngreso.FechaSolicitud;
 
-
-                solicitudIngresoNH.FechaResolucion = solicitudIngreso.FechaResolucion;
-
                 session.Update (solicitudIngresoNH);
                 SessionCommit ();
         }

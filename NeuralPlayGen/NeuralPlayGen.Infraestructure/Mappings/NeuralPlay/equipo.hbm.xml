@@ -120,5 +120,6 @@
 		 </class>	
 		  
 		  <query name="EquipoNHReadAllHQL">from EquipoNH</query>
+		  <query name="EquipoNHdameEquiposPorTorneoHQL"><![CDATA[select equ FROM EquipoNH as equ inner join equ.ParticipacionTorneo as participacion where participacion.Torneo.id = :e_idTorneo]]></query>
 		</hibernate-mapping>
 	

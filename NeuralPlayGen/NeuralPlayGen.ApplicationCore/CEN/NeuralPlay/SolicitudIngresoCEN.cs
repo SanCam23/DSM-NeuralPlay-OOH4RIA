@@ -30,7 +30,7 @@ public ISolicitudIngresoRepository get_ISolicitudIngresoRepository ()
         return this._ISolicitudIngresoRepository;
 }
 
-public int New_ (NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.TipoInvitacionEnum p_tipo, NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.EstadoSolicitudEnum p_estado, Nullable<DateTime> p_fechaSolicitud, Nullable<DateTime> p_fechaResolucion, int p_comunidad, int p_usuario)
+public int New_ (NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.TipoInvitacionEnum p_tipo, NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.EstadoSolicitudEnum p_estado, Nullable<DateTime> p_fechaSolicitud, int p_comunidad, int p_usuario)
 {
         SolicitudIngresoEN solicitudIngresoEN = null;
         int oid;
@@ -42,8 +42,6 @@ public int New_ (NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.TipoInvitac
         solicitudIngresoEN.Estado = p_estado;
 
         solicitudIngresoEN.FechaSolicitud = p_fechaSolicitud;
-
-        solicitudIngresoEN.FechaResolucion = p_fechaResolucion;
 
 
         if (p_comunidad != -1) {
@@ -67,7 +65,7 @@ public int New_ (NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.TipoInvitac
         return oid;
 }
 
-public void Modify (int p_SolicitudIngreso_OID, NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.TipoInvitacionEnum p_tipo, NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.EstadoSolicitudEnum p_estado, Nullable<DateTime> p_fechaSolicitud, Nullable<DateTime> p_fechaResolucion)
+public void Modify (int p_SolicitudIngreso_OID, NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.TipoInvitacionEnum p_tipo, NeuralPlayGen.ApplicationCore.Enumerated.NeuralPlay.EstadoSolicitudEnum p_estado, Nullable<DateTime> p_fechaSolicitud)
 {
         SolicitudIngresoEN solicitudIngresoEN = null;
 
@@ -77,7 +75,6 @@ public void Modify (int p_SolicitudIngreso_OID, NeuralPlayGen.ApplicationCore.En
         solicitudIngresoEN.Tipo = p_tipo;
         solicitudIngresoEN.Estado = p_estado;
         solicitudIngresoEN.FechaSolicitud = p_fechaSolicitud;
-        solicitudIngresoEN.FechaResolucion = p_fechaResolucion;
         //Call to SolicitudIngresoRepository
 
         _ISolicitudIngresoRepository.Modify (solicitudIngresoEN);

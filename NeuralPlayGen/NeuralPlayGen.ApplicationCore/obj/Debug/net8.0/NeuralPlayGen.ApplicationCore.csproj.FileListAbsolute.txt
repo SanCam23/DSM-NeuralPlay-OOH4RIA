@@ -10,3 +10,16 @@ C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\
 C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\refint\NeuralPlayGen.ApplicationCore.dll
 C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.pdb
 C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\ref\NeuralPlayGen.ApplicationCore.dll
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\bin\Debug\net8.0\NeuralPlayGen.ApplicationCore.deps.json
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\bin\Debug\net8.0\NeuralPlayGen.ApplicationCore.dll
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\bin\Debug\net8.0\NeuralPlayGen.ApplicationCore.pdb
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.csproj.AssemblyReference.cache
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.AssemblyInfoInputs.cache
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.AssemblyInfo.cs
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.sourcelink.json
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.dll
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\refint\NeuralPlayGen.ApplicationCore.dll
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\NeuralPlayGen.ApplicationCore.pdb
+C:\OOH4RIA\DSM2025\DSM-NeuralPlay-OOh4RIA\NeuralPlayGen\NeuralPlayGen.ApplicationCore\obj\Debug\net8.0\ref\NeuralPlayGen.ApplicationCore.dll

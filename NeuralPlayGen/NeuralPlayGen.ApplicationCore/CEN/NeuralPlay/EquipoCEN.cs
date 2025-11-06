@@ -108,5 +108,9 @@ public System.Collections.Generic.IList<EquipoEN> ReadAll (int first, int size)
         list = _IEquipoRepository.ReadAll (first, size);
         return list;
 }
+public System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.EquipoEN> DameEquiposPorTorneo (int ? e_idTorneo)
+{
+        return _IEquipoRepository.DameEquiposPorTorneo (e_idTorneo);
+}
 }
 }

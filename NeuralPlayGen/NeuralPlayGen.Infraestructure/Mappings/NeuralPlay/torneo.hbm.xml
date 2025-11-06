@@ -70,5 +70,6 @@
 		 </class>	
 		  
 		  <query name="TorneoNHReadAllHQL">from TorneoNH</query>
+		  <query name="TorneoNHdameTorneosPorEquipoHQL"><![CDATA[select torn FROM TorneoNH as torn inner join torn.ParticipacionTorneo as participacion where participacion.Equipo.id = :t_idEquipo]]></query>
 		</hibernate-mapping>
 	

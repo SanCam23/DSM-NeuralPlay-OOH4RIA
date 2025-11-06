@@ -30,39 +30,6 @@ public IUsuarioRepository get_IUsuarioRepository ()
         return this._IUsuarioRepository;
 }
 
-public int New_ (String p_pass, string p_nick, string p_correoElectronico, string p_telefono, Nullable<DateTime> p_fechaRegistro, bool p_estadoCuenta, int p_perfil)
-{
-        UsuarioEN usuarioEN = null;
-        int oid;
-
-        //Initialized UsuarioEN
-        usuarioEN = new UsuarioEN ();
-        usuarioEN.Pass = Utils.Util.GetEncondeMD5 (p_pass);
-
-        usuarioEN.Nick = p_nick;
-
-        usuarioEN.CorreoElectronico = p_correoElectronico;
-
-        usuarioEN.Telefono = p_telefono;
-
-        usuarioEN.FechaRegistro = p_fechaRegistro;
-
-        usuarioEN.EstadoCuenta = p_estadoCuenta;
-
-
-        if (p_perfil != -1) {
-                // El argumento p_perfil -> Property perfil es oid = false
-                // Lista de oids id
-                usuarioEN.Perfil = new NeuralPlayGen.ApplicationCore.EN.NeuralPlay.PerfilEN ();
-                usuarioEN.Perfil.Id = p_perfil;
-        }
-
-
-
-        oid = _IUsuarioRepository.New_ (usuarioEN);
-        return oid;
-}
-
 public void Modify (int p_Usuario_OID, String p_pass, string p_nick, string p_correoElectronico, string p_telefono, Nullable<DateTime> p_fechaRegistro, bool p_estadoCuenta)
 {
         UsuarioEN usuarioEN = null;
@@ -102,6 +69,14 @@ public System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size)
 
         list = _IUsuarioRepository.ReadAll (first, size);
         return list;
+}
+public System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> DameUsuariosPorEquipo (int ? u_idEquipo)
+{
+        return _IUsuarioRepository.DameUsuariosPorEquipo (u_idEquipo);
+}
+public System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> DameUsuariosPorComunidad (int ? u_idComunidad)
+{
+        return _IUsuarioRepository.DameUsuariosPorComunidad (u_idComunidad);
 }
 }
 }

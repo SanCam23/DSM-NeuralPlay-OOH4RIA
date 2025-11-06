@@ -22,7 +22,7 @@
 						<column name="fechaSolicitud"  not-null="true"/>
 					</property>
 					<property name="FechaResolucion" type="date"> 
-						<column name="fechaResolucion"  not-null="true"/>
+						<column name="fechaResolucion" />
 					</property>
 			
 			

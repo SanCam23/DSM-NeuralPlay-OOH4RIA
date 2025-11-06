@@ -281,5 +281,36 @@ public System.Collections.Generic.IList<TorneoEN> ReadAll (int first, int size)
 
         return result;
 }
+
+public System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.TorneoEN> DameTorneosPorEquipo (int ? t_idEquipo)
+{
+        System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.TorneoEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM TorneoNH self where select torn FROM TorneoNH as torn inner join torn.ParticipacionTorneo as participacion where participacion.Equipo.id = :t_idEquipo";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("TorneoNHdameTorneosPorEquipoHQL");
+                query.SetParameter ("t_idEquipo", t_idEquipo);
+
+                result = query.List<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.TorneoEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is NeuralPlayGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new NeuralPlayGen.ApplicationCore.Exceptions.DataLayerException ("Error in TorneoRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

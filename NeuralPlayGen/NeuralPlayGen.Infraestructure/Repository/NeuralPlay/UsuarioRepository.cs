@@ -304,5 +304,66 @@ public System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size)
 
         return result;
 }
+
+public System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> DameUsuariosPorEquipo (int ? u_idEquipo)
+{
+        System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM UsuarioNH self where select u FROM UsuarioNH as u inner join u.MiembroEquipo as mem where mem.Equipo.id = :u_idEquipo";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("UsuarioNHdameUsuariosPorEquipoHQL");
+                query.SetParameter ("u_idEquipo", u_idEquipo);
+
+                result = query.List<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is NeuralPlayGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new NeuralPlayGen.ApplicationCore.Exceptions.DataLayerException ("Error in UsuarioRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
+public System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> DameUsuariosPorComunidad (int ? u_idComunidad)
+{
+        System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> result;
+        try
+        {
+                SessionInitializeTransaction ();
+                //String sql = @"FROM UsuarioNH self where select u FROM UsuarioNH as u inner join u.MiembroComunidad as mem where mem.Comunidad.id = :u_idComunidad";
+                //IQuery query = session.CreateQuery(sql);
+                IQuery query = (IQuery)session.GetNamedQuery ("UsuarioNHdameUsuariosPorComunidadHQL");
+                query.SetParameter ("u_idComunidad", u_idComunidad);
+
+                result = query.List<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN>();
+                SessionCommit ();
+        }
+
+        catch (Exception ex) {
+                SessionRollBack ();
+                if (ex is NeuralPlayGen.ApplicationCore.Exceptions.ModelException)
+                        throw;
+                else throw new NeuralPlayGen.ApplicationCore.Exceptions.DataLayerException ("Error in UsuarioRepository.", ex);
+        }
+
+
+        finally
+        {
+                SessionClose ();
+        }
+
+        return result;
+}
 }
 }

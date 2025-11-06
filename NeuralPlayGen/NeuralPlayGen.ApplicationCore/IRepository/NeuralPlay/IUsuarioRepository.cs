@@ -32,5 +32,11 @@ UsuarioEN ReadOID (int id
 
 
 System.Collections.Generic.IList<UsuarioEN> ReadAll (int first, int size);
+
+
+System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> DameUsuariosPorEquipo (int ? u_idEquipo);
+
+
+System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.UsuarioEN> DameUsuariosPorComunidad (int ? u_idComunidad);
 }
 }

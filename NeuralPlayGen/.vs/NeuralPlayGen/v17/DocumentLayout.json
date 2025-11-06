@@ -1,18 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\",
+  "WorkspaceRootPath": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\neuralplaygen\\neuralplaygen.applicationcore\\cp\\manual\\propuestatorneocp_aprobarpropuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{707DAD7F-5632-4AD7-860E-73A181C52EE2}|InitializeDB\\InitializeDB.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\initializedb\\initializedb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{707DAD7F-5632-4AD7-860E-73A181C52EE2}|InitializeDB\\InitializeDB.csproj|solutionrelative:initializedb\\initializedb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\neuralplaygen.applicationcore\\cp\\manual\\propuestatorneocp_aprobarpropuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|solutionrelative:neuralplaygen.applicationcore\\cp\\manual\\propuestatorneocp_aprobarpropuesta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\neuralplaygen\\neuralplaygen.applicationcore\\cp\\manual\\invitacioncp_aceptarinvitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|solutionrelative:neuralplaygen.applicationcore\\cp\\manual\\invitacioncp_aceptarinvitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{707DAD7F-5632-4AD7-860E-73A181C52EE2}|InitializeDB\\InitializeDB.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\initializedb\\createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{707DAD7F-5632-4AD7-860E-73A181C52EE2}|InitializeDB\\InitializeDB.csproj|solutionrelative:initializedb\\createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{707DAD7F-5632-4AD7-860E-73A181C52EE2}|InitializeDB\\InitializeDB.csproj|c:\\ooh4ria\\dsm2025\\neuralplaygen\\initializedb\\createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{707DAD7F-5632-4AD7-860E-73A181C52EE2}|InitializeDB\\InitializeDB.csproj|solutionrelative:initializedb\\createdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\neuralplaygen.applicationcore\\cen\\manual\\notificacioncen_new_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|solutionrelative:neuralplaygen.applicationcore\\cen\\manual\\notificacioncen_new_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\neuralplaygen.applicationcore\\cen\\manual\\perfilcen_new_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|solutionrelative:neuralplaygen.applicationcore\\cen\\manual\\perfilcen_new_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\neuralplaygen.applicationcore\\cen\\manual\\perfilcen_modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|solutionrelative:neuralplaygen.applicationcore\\cen\\manual\\perfilcen_modify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\neuralplaygen.applicationcore\\cen\\manual\\usuariocen_new_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|solutionrelative:neuralplaygen.applicationcore\\cen\\manual\\usuariocen_new_.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|c:\\ooh4ria\\dsm2025\\dsm-neuralplay-ooh4ria\\neuralplaygen\\neuralplaygen.applicationcore\\cp\\manual\\invitacioncp_aceptarinvitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{136146C2-C1FA-46C4-B4C6-5EF1731564CD}|NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj|solutionrelative:neuralplaygen.applicationcore\\cp\\manual\\invitacioncp_aceptarinvitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotificacionCEN_new_.cs",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\NotificacionCEN_new_.cs",
+              "RelativeDocumentMoniker": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\NotificacionCEN_new_.cs",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\NotificacionCEN_new_.cs",
+              "RelativeToolTip": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\NotificacionCEN_new_.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T22:03:32.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PerfilCEN_new_.cs",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_new_.cs",
+              "RelativeDocumentMoniker": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_new_.cs",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_new_.cs",
+              "RelativeToolTip": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_new_.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBMAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:48:45.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PerfilCEN_modify.cs",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_modify.cs",
+              "RelativeDocumentMoniker": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_modify.cs",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_modify.cs",
+              "RelativeToolTip": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\PerfilCEN_modify.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBMAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:47:17.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioCEN_new_.cs",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\UsuarioCEN_new_.cs",
+              "RelativeDocumentMoniker": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\UsuarioCEN_new_.cs",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CEN\\manual\\UsuarioCEN_new_.cs",
+              "RelativeToolTip": "NeuralPlayGen.ApplicationCore\\CEN\\manual\\UsuarioCEN_new_.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T21:15:46.219Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "InitializeDB.csproj",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\InitializeDB\\InitializeDB.csproj",
+              "RelativeDocumentMoniker": "InitializeDB\\InitializeDB.csproj",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\InitializeDB\\InitializeDB.csproj",
+              "RelativeToolTip": "InitializeDB\\InitializeDB.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-06T18:37:44.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PropuestaTorneoCP_aprobarPropuesta.cs",
-              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\PropuestaTorneoCP_aprobarPropuesta.cs",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\PropuestaTorneoCP_aprobarPropuesta.cs",
               "RelativeDocumentMoniker": "NeuralPlayGen.ApplicationCore\\CP\\manual\\PropuestaTorneoCP_aprobarPropuesta.cs",
-              "ToolTip": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\PropuestaTorneoCP_aprobarPropuesta.cs",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\PropuestaTorneoCP_aprobarPropuesta.cs",
               "RelativeToolTip": "NeuralPlayGen.ApplicationCore\\CP\\manual\\PropuestaTorneoCP_aprobarPropuesta.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCUAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAlwEYAAABoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-06T17:07:23.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InvitacionCP_aceptarInvitacion.cs",
-              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
-              "RelativeDocumentMoniker": "NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
-              "ToolTip": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
-              "RelativeToolTip": "NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAcwCgAAABkAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CreateDB.cs",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\InitializeDB\\CreateDB.cs",
+              "RelativeDocumentMoniker": "InitializeDB\\CreateDB.cs",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\InitializeDB\\CreateDB.cs",
+              "RelativeToolTip": "InitializeDB\\CreateDB.cs",
+              "ViewState": "AgIAAFYBAAAAAAAAAAAuwGsBAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T17:07:13.331Z",
+              "WhenOpened": "2025-11-06T16:58:36.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateDB.cs",
-              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\InitializeDB\\CreateDB.cs",
-              "RelativeDocumentMoniker": "InitializeDB\\CreateDB.cs",
-              "ToolTip": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\InitializeDB\\CreateDB.cs",
-              "RelativeToolTip": "InitializeDB\\CreateDB.cs",
-              "ViewState": "AgIAABUBAAAAAAAAAAAAAB8BAABlAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "InvitacionCP_aceptarInvitacion.cs",
+              "DocumentMoniker": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
+              "RelativeDocumentMoniker": "NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
+              "ToolTip": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
+              "RelativeToolTip": "NeuralPlayGen.ApplicationCore\\CP\\manual\\InvitacionCP_aceptarInvitacion.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwCgAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T16:58:36.922Z"
+              "WhenOpened": "2025-11-06T17:07:13.331Z"
             }
           ]
         }

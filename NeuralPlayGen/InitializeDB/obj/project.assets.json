@@ -5949,23 +5949,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mlagu\\.nuget\\packages\\": {},
+    "C:\\Users\\donat\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\InitializeDB\\InitializeDB.csproj",
+      "projectUniqueName": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\InitializeDB\\InitializeDB.csproj",
       "projectName": "InitializeDB",
-      "projectPath": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\InitializeDB\\InitializeDB.csproj",
-      "packagesPath": "C:\\Users\\mlagu\\.nuget\\packages\\",
-      "outputPath": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\InitializeDB\\obj\\",
+      "projectPath": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\InitializeDB\\InitializeDB.csproj",
+      "packagesPath": "C:\\Users\\donat\\.nuget\\packages\\",
+      "outputPath": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\InitializeDB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mlagu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\donat\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5980,11 +5980,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj": {
-              "projectPath": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj"
+            "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj": {
+              "projectPath": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.ApplicationCore\\NeuralPlayGen.ApplicationCore.csproj"
             },
-            "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.Infraestructure\\NeuralPlayGen.Infraestructure.csproj": {
-              "projectPath": "C:\\OOH4RIA\\DSM2025\\NeuralPlayGen\\NeuralPlayGen.Infraestructure\\NeuralPlayGen.Infraestructure.csproj"
+            "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.Infraestructure\\NeuralPlayGen.Infraestructure.csproj": {
+              "projectPath": "C:\\OOH4RIA\\DSM2025\\DSM-NeuralPlay-OOh4RIA\\NeuralPlayGen\\NeuralPlayGen.Infraestructure\\NeuralPlayGen.Infraestructure.csproj"
             }
           }
         }

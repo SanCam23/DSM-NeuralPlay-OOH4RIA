@@ -134,7 +134,7 @@ public static void InitializeData ()
                         Console.WriteLine ("--- INICIO INICIALIZACIÓN DE DATOS DE PRUEBA ---");
 
                         // =========================================================================
-                        // 1. SETUP BÁSICO (Usuarios, Comunidades, Juegos, etc.)
+                        // 1. SETUP BÁSICO (Usuarios, Comunidades, Juegos, etc.) AQUI TAMBIEN SE PRUEBAN LOS CRUD CUSTOM
                         // =========================================================================
                         Console.WriteLine ("Creando datos maestros básicos...");
 
@@ -150,7 +150,7 @@ public static void InitializeData ()
                                 JuegoFavorito = "Todos los juegos"
                         };
                         int perfilAdminId = perfilrepository.New_ (perfilAdminEN);
-                        int userAdminId = usuariocen.New_ ("pass123", "AdminUser", "admin@neuralplay.com", "1234", DateTime.Now.AddYears (-25), true, perfilAdminId);
+                        int userAdminId = usuariocen.New_ ("pass123", "AdminUser", "admin@neuralplay.com", "1234", DateTime.Now.AddYears (-25), perfilAdminId);
                         Console.WriteLine ("OK: Creado Admin (User ID: {userAdminId}, Perfil ID: {perfilAdminId})");
 
 
@@ -164,7 +164,7 @@ public static void InitializeData ()
                                 JuegoFavorito = "Todos los juegos"
                         };
                         int perfilLiderId = perfilrepository.New_ (perfilLiderEN);
-                        int userLiderId = usuariocen.New_ ("pass123", "LiderUser", "lider@neuralplay.com", "4555", DateTime.Now.AddYears (-20), true, perfilLiderId);
+                        int userLiderId = usuariocen.New_ ("pass123", "LiderUser", "lider@neuralplay.com", "4555", DateTime.Now.AddYears (-20), perfilLiderId);
                         Console.WriteLine ("OK: Creado Líder (User ID: {userLiderId}, Perfil ID: {perfilLiderId})");
 
 
@@ -178,7 +178,7 @@ public static void InitializeData ()
                                 JuegoFavorito = "Todos los juegos"
                         };
                         int perfilMember1Id = perfilrepository.New_ (perfilMember1EN);
-                        int userMember1Id = usuariocen.New_ ("pass123", "Member1", "mem1@neuralplay.com", "8789", DateTime.Now.AddYears (-18), true, perfilMember1Id);
+                        int userMember1Id = usuariocen.New_ ("pass123", "Member1", "mem1@neuralplay.com", "8789", DateTime.Now.AddYears (-18), perfilMember1Id);
                         Console.WriteLine ("OK: Creado Member1 (User ID: {userMember1Id}, Perfil ID: {perfilMember1Id})");
 
 
@@ -192,7 +192,7 @@ public static void InitializeData ()
                                 JuegoFavorito = "Todos los juegos"
                         };
                         int perfilMember2Id = perfilrepository.New_ (perfilMember2EN);
-                        int userMember2Id = usuariocen.New_ ("pass123", "Member2", "mem2@neuralplay.com", "3421", DateTime.Now.AddYears (-22), true, perfilMember2Id);
+                        int userMember2Id = usuariocen.New_ ("pass123", "Member2", "mem2@neuralplay.com", "3421", DateTime.Now.AddYears (-22), perfilMember2Id);
                         Console.WriteLine ("OK: Creado Member2 (User ID: {userMember2Id}, Perfil ID: {perfilMember2Id})");
 
 
@@ -206,7 +206,7 @@ public static void InitializeData ()
                                 JuegoFavorito = "Todos los juegos"
                         };
                         int perfilBannedId = perfilrepository.New_ (perfilBannedEN);
-                        int userBannedId = usuariocen.New_ ("pass123", "TrollUser", "troll@neuralplay.com", "1256", DateTime.Now.AddYears (-15), true, perfilBannedId);
+                        int userBannedId = usuariocen.New_ ("pass123", "TrollUser", "troll@neuralplay.com", "1256", DateTime.Now.AddYears (-15), perfilBannedId);
                         Console.WriteLine ("OK: Creado Banned (User ID: {userBannedId}, Perfil ID: {perfilBannedId})");
 
                         // --- FIN DE LA CORRECCIÓN ---
@@ -287,8 +287,99 @@ public static void InitializeData ()
                         else
                                 Console.WriteLine ("ERROR: La invitacion no se borra tras aceptar.");
 
+                        // =========================================================================
+                        // 4. PRUEBAS READFILTER
+                        // =========================================================================
+                        Console.WriteLine ("\n--- Pruebas ReadFilter ---");
 
-                        Console.WriteLine ("\n--- FIN INICIALIZACIÓN ---");
+                        Console.WriteLine ("\nCreando datos para pruebas de Torneos...");
+
+                        int torneoTestId = torneocen.New_ ("Copa Verano LoL", DateTime.Now.AddDays (5), "Reglas: Solo nivel 30+", true, comunidadLoLId);
+
+                        participaciontorneocen.New_ (EstadoParticipacionEnum.Aceptada, DateTime.Now, torneoTestId, equipoAlphaId);
+
+                        IList<UsuarioEN> usuariosPorEquipo = usuariocen.DameUsuariosPorEquipo (equipoAlphaId);
+                        Console.WriteLine ("consultamos los usuarios que estan en el equipo: " + equipoAlphaId);
+
+                        foreach (UsuarioEN user in usuariosPorEquipo) {
+                                Console.WriteLine ("Usuario ID: " + user.Id + " Nick: " + user.Nick);
+                        }
+
+                        IList<UsuarioEN> usuariosPorComunidad = usuariocen.DameUsuariosPorComunidad (comunidadLoLId);
+                        Console.WriteLine ("Consultando usuarios de la comunidad ID: " + comunidadLoLId);
+
+                        foreach (UsuarioEN user in usuariosPorComunidad) {
+                                Console.WriteLine ("Usuario ID: " + user.Id + " | Nick: " + user.Nick);
+                        }
+
+                        IList<TorneoEN> torneosPorEquipo = torneocen.DameTorneosPorEquipo (equipoAlphaId);
+                        Console.WriteLine ("Consultando torneos donde participa el equipo ID: " + equipoAlphaId);
+
+                        foreach (TorneoEN torneo in torneosPorEquipo) {
+                                Console.WriteLine ("Torneo ID: " + torneo.Id + " | Nombre: " + torneo.Nombre);
+                        }
+
+                        IList<EquipoEN> equiposPorTorneo = equipocen.DameEquiposPorTorneo (torneoTestId);
+                        Console.WriteLine ("Consultando equipos inscritos en el torneo ID: " + torneoTestId);
+
+                        foreach (EquipoEN equipo in equiposPorTorneo) {
+                                Console.WriteLine ("Equipo ID: " + equipo.Id + " | Nombre: " + equipo.Nombre);
+                        }
+
+                        // =========================================================================
+                        // TEST: Prueba de Validación de Privacidad del perfil (Debe fallar) (Prueba crud custom)
+                        // =========================================================================
+                        Console.WriteLine ("\n--- Test Validación Privacidad Perfil ---");
+                        try
+                        {
+                                Console.WriteLine ("Intentando crear perfil inválido (Perfil Privado, Actividad Pública)...");
+                                // Intentamos crear un perfil que rompe la regla:
+                                // VisibilidadPerfil = Privado (Enum valor 2 según tu imagen)
+                                // VisibilidadActividad = Publico (Enum valor 1)
+                                perfilcen.New_ ("invalid.png",
+                                        VisibilidadEnum.Privado,
+                                        VisibilidadEnum.Publico,
+                                        "Perfil que debería fallar",
+                                        "Ninguno");
+
+                                // Si llega aquí, es que NO ha saltado la excepción -> ERROR en la validación
+                                Console.WriteLine ("ERROR: Se permitió crear un perfil con privacidad incoherente.");
+                        }
+                        catch (Exception ex)
+                        {
+                                // Si salta la excepción, es que la validación FUNCIONA -> OK
+                                Console.WriteLine ("OK: La creación falló como se esperaba. Mensaje: " + ex.Message);
+                        }
+
+                        // =========================================================================
+                        // TEST 6: Prueba Notificación por defecto no leída (Prueba crud custom)
+                        // =========================================================================
+                        Console.WriteLine("\n--- Test Notificación Leída=False por defecto ---");
+                        try
+                        {
+                            // 1. Crear una notificación para un usuario existente (ej. Admin)
+                            // Asegúrate de usar un tipo válido de tu Enum (ej. Sistema, Info, etc.)
+                            int notifId = notificacioncen.New_(TipoNotificacionEnum.Sistema,"Bienvenido a NeuralPlay",DateTime.Now,userAdminId);
+
+                            // 2. Recuperar la notificación de la BD
+                            NotificacionEN notifRecuperada = notificacioncen.ReadOID(notifId);
+
+                            // 3. Verificar que Leida es false
+                            if (notifRecuperada.Leida == false)
+                            {
+                                Console.WriteLine("OK: La notificación se creó correctamente como NO LEÍDA.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("ERROR: La notificación se creó como LEÍDA (true), debería ser false.");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("ERROR FATAL en Test Notificación: " + ex.Message);
+                        }
+
+                    Console.WriteLine ("\n--- FIN INICIALIZACIÓN ---");
                 }
                 catch (Exception ex)
                 {

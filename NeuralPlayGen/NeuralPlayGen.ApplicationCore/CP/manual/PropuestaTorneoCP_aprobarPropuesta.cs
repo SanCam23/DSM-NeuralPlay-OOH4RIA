@@ -69,7 +69,6 @@ public void AprobarPropuesta (int p_oid)
                         notificacionCEN.New_ (
                                 Enumerated.NeuralPlay.TipoNotificacionEnum.UnionTorneo,
                                 "Tu propuesta de torneo '" + propuestaEN.Nombre + "' ha sido aprobada!",
-                                false,
                                 DateTime.Now,
                                 propuestaEN.Usuario.Id
                                 );

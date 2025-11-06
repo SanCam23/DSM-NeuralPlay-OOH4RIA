@@ -97,5 +97,9 @@ public System.Collections.Generic.IList<TorneoEN> ReadAll (int first, int size)
         list = _ITorneoRepository.ReadAll (first, size);
         return list;
 }
+public System.Collections.Generic.IList<NeuralPlayGen.ApplicationCore.EN.NeuralPlay.TorneoEN> DameTorneosPorEquipo (int ? t_idEquipo)
+{
+        return _ITorneoRepository.DameTorneosPorEquipo (t_idEquipo);
+}
 }
 }
