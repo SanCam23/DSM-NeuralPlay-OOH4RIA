@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="ParticipacionTorneoNH" table="ParticipacionTorneo"> 
+				  	
+						<id name="Id" column="idParticipacionTorneo" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Estado" > 
+						<column name="estado"  not-null="true"/>
+					</property>
+					<property name="FechaAlta" type="date"> 
+						<column name="fechaAlta"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Torneo" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.TorneoNH" >	
+								<column name="FK_idTorneo_idTorneo"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Equipo" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.EquipoNH" >	
+								<column name="FK_idEquipo_idEquipo"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="ParticipacionTorneoNHReadAllHQL">from ParticipacionTorneoNH</query>
+		</hibernate-mapping>
+	

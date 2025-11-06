@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="UsuarioNH" table="Usuario"> 
+				  	
+						<id name="Id" column="idUsuario" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Pass" type="string"> 
+						<column name="pass"  not-null="true"/>
+					</property>
+					<property name="Nick" type="string"> 
+						<column name="nick"  not-null="true"/>
+					</property>
+					<property name="CorreoElectronico" type="string"> 
+						<column name="correoElectronico"  not-null="true"/>
+					</property>
+					<property name="Telefono" type="string"> 
+						<column name="telefono"  not-null="true"/>
+					</property>
+					<property name="FechaRegistro" type="timestamp"> 
+						<column name="fechaRegistro"  not-null="true"/>
+					</property>
+					<property name="EstadoCuenta" type="boolean"> 
+						<column name="estadoCuenta"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<bag name="MiembroComunidad" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.MiembroComunidadNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="MiembroEquipo" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.MiembroEquipoNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="MensajeChat" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.MensajeChatNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="InvitacionEmisor" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.InvitacionNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="InvitacionReceptor" table="[invitacion_0_usuario]" inverse="true" >
+							<key>
+								
+									<column name="FK_idUsuario_idUsuario"/> 
+							</key>
+      						<many-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.InvitacionNH">
+									<column name="FK_idInvitacion_idInvitacion_0"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="SolicitudIngreso" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.SolicitudIngresoNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Publicacion" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PublicacionNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Comentario" table="[comentario_usuario]" inverse="true" >
+							<key>
+								
+									<column name="FK_idUsuario_idUsuario"/> 
+							</key>
+      						<many-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ComentarioNH">
+									<column name="FK_idComentario_idComentario"/> 
+      						</many-to-many>
+    					</bag>
+			
+		  			
+						<bag name="Notificacion" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.NotificacionNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Reaccion" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ReaccionNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="PropuestaTorneo" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PropuestaTorneoNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="VotoTorneo" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.VotoTorneoNH"/>
+					    </bag>
+					
+			
+		  			
+					
+							<many-to-one name="Perfil" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PerfilNH" >
+								<column name="FK_idPerfil_idPerfil"/> 
+        					</many-to-one>
+					 
+						
+			
+		  			
+						<bag name="Sesion" >
+							<key>
+							
+								
+								<column name="FK_idUsuario_idUsuario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.SesionNH"/>
+					    </bag>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="UsuarioNHReadAllHQL">from UsuarioNH</query>
+		</hibernate-mapping>
+	

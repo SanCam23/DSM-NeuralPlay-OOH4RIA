@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="SesionNH" table="Sesion"> 
+				  	
+						<id name="Id" column="idSesion" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="FechaInicio" type="date"> 
+						<column name="fechaInicio"  not-null="true"/>
+					</property>
+					<property name="FechaFin" type="date"> 
+						<column name="fechaFin"  not-null="true"/>
+					</property>
+					<property name="Token" type="string"> 
+						<column name="token"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Usuario" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuario"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="SesionNHReadAllHQL">from SesionNH</query>
+		</hibernate-mapping>
+	

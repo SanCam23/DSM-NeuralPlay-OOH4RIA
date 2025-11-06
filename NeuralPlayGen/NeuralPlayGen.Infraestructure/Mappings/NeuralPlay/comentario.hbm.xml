@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="ComentarioNH" table="Comentario"> 
+				  	
+						<id name="Id" column="idComentario" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Contenido" type="string"> 
+						<column name="contenido"  not-null="true"/>
+					</property>
+					<property name="FechaCreacion" type="date"> 
+						<column name="fechaCreacion"  not-null="true"/>
+					</property>
+					<property name="FechaEdicion" type="date"> 
+						<column name="fechaEdicion"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Publicacion" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PublicacionNH" >	
+								<column name="FK_idPublicacion_idPublicacion"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="Reaccion" cascade="delete">
+							<key>
+							
+								
+								<column name="FK_idComentario_idComentario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ReaccionNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Notificacion" >
+							<key>
+							
+								
+								<column name="FK_idComentario_idComentario"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.NotificacionNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Usuario" table="[comentario_usuario]"  >
+							<key>
+								
+									<column name="FK_idComentario_idComentario"/> 
+							</key>
+      						<many-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.UsuarioNH">
+									<column name="FK_idUsuario_idUsuario"/> 
+      						</many-to-many>
+    					</bag>
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="ComentarioNHReadAllHQL">from ComentarioNH</query>
+		</hibernate-mapping>
+	

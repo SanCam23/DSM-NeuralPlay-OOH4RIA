@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="PerfilNH" table="Perfil"> 
+				  	
+						<id name="Id" column="idPerfil" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="FotoPerfilUrl" type="string"> 
+						<column name="fotoPerfilUrl"  not-null="true"/>
+					</property>
+					<property name="VisibilidadPerfil" > 
+						<column name="visibilidadPerfil"  not-null="true"/>
+					</property>
+					<property name="VisibilidadActividad" > 
+						<column name="visibilidadActividad"  not-null="true"/>
+					</property>
+					<property name="Descripcion" type="string"> 
+						<column name="descripcion"  not-null="true"/>
+					</property>
+					<property name="JuegoFavorito" type="string"> 
+						<column name="juegoFavorito"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<bag name="PerfilJuego" cascade="delete">
+							<key>
+							
+								
+								<column name="FK_idPerfil_idPerfil"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PerfilJuegoNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="Juego" >
+							<key>
+							
+								
+								<column name="FK_idPerfil_idPerfil_0"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.JuegoNH"/>
+					    </bag>
+					
+			
+		  			
+					
+							   <one-to-one name="Usuario" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.UsuarioNH" property-ref="Perfil" />							
+					 
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="PerfilNHReadAllHQL">from PerfilNH</query>
+		</hibernate-mapping>
+	

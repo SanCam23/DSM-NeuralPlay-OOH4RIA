@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="NotificacionNH" table="Notificacion"> 
+				  	
+						<id name="Id" column="idNotificacion" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Tipo" > 
+						<column name="tipo"  not-null="true"/>
+					</property>
+					<property name="Mensaje" type="string"> 
+						<column name="mensaje"  not-null="true"/>
+					</property>
+					<property name="Leida" type="boolean"> 
+						<column name="leida"  not-null="true"/>
+					</property>
+					<property name="FechaCreacion" type="date"> 
+						<column name="fechaCreacion"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Publicacion" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PublicacionNH" >	
+								<column name="FK_idPublicacion_idPublicacion"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Comentario" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ComentarioNH" >	
+								<column name="FK_idComentario_idComentario"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Reaccion" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ReaccionNH" >	
+								<column name="FK_idReaccion_idRedaccion"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="PropuestaTorneo" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PropuestaTorneoNH" >	
+								<column name="FK_idPropuestaTorneo_idPropuestaTorneo"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Usuario" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuario"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="NotificacionNHReadAllHQL">from NotificacionNH</query>
+		</hibernate-mapping>
+	

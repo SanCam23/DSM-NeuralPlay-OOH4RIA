@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="TorneoNH" table="Torneo"> 
+				  	
+						<id name="Id" column="idTorneo" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Nombre" type="string"> 
+						<column name="nombre"  not-null="true"/>
+					</property>
+					<property name="FechaInicio" type="date"> 
+						<column name="fechaInicio"  not-null="true"/>
+					</property>
+					<property name="Reglas" type="string"> 
+						<column name="reglas"  not-null="true"/>
+					</property>
+					<property name="Estado" type="boolean"> 
+						<column name="estado"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Comunidad" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ComunidadNH" >	
+								<column name="FK_idComunidad_idComunidad"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="PropuestaTorneo" >
+							<key>
+							
+								
+								<column name="FK_idTorneo_idTorneo"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PropuestaTorneoNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="ParticipacionTorneo" >
+							<key>
+							
+								
+								<column name="FK_idTorneo_idTorneo"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ParticipacionTorneoNH"/>
+					    </bag>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="TorneoNHReadAllHQL">from TorneoNH</query>
+		</hibernate-mapping>
+	

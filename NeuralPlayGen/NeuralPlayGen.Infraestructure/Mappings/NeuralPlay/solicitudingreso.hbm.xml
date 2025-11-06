@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="SolicitudIngresoNH" table="SolicitudIngreso"> 
+				  	
+						<id name="Id" column="idSolicitudIngreso" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Tipo" > 
+						<column name="tipo"  not-null="true"/>
+					</property>
+					<property name="Estado" > 
+						<column name="estado"  not-null="true"/>
+					</property>
+					<property name="FechaSolicitud" type="date"> 
+						<column name="fechaSolicitud"  not-null="true"/>
+					</property>
+					<property name="FechaResolucion" type="date"> 
+						<column name="fechaResolucion"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Comunidad" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ComunidadNH" >	
+								<column name="FK_idComunidad_idComunidad"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Equipo" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.EquipoNH" >	
+								<column name="FK_idEquipo_idEquipo"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Usuario" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuario"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="SolicitudIngresoNHReadAllHQL">from SolicitudIngresoNH</query>
+		</hibernate-mapping>
+	

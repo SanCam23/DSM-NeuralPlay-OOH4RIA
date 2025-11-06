@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="JuegoNH" table="Juego"> 
+				  	
+						<id name="Id" column="idJuego" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Nombre" type="string"> 
+						<column name="nombre"  not-null="true"/>
+					</property>
+					<property name="Genero" > 
+						<column name="genero"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+		  			
+						<bag name="PerfilJuego" >
+							<key>
+							
+								
+								<column name="FK_idJuego_idJuego"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PerfilJuegoNH"/>
+					    </bag>
+					
+			
+		  			
+						<many-to-one name="Perfil_0" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.PerfilNH" >	
+								<column name="FK_idPerfil_idPerfil_0"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<bag name="Equipo" table="[juego_equipo]"  >
+							<key>
+								
+									<column name="FK_idJuego_idJuego"/> 
+							</key>
+      						<many-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.EquipoNH">
+									<column name="FK_idEquipo_idEquipo"/> 
+      						</many-to-many>
+    					</bag>
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="JuegoNHReadAllHQL">from JuegoNH</query>
+		</hibernate-mapping>
+	

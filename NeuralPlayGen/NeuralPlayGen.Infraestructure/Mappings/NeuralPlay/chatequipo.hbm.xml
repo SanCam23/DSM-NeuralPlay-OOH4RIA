@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="ChatEquipoNH" table="ChatEquipo"> 
+				  	
+						<id name="Id" column="idChatEquipo" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+			
+			
+			
+		  			
+						<bag name="Equipo" >
+							<key>
+							
+								
+								<column name="FK_idChatEquipo_idChatEquipo"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.EquipoNH"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="MensajeChat" cascade="delete">
+							<key>
+							
+								
+								<column name="FK_idChatEquipo_idChatEquipo"/>
+					      	</key>
+							<one-to-many class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.MensajeChatNH"/>
+					    </bag>
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="ChatEquipoNHReadAllHQL">from ChatEquipoNH</query>
+		</hibernate-mapping>
+	

@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+		  <ItemGroup>
+		  
+	<EmbeddedResource Include="Mappings\NeuralPlay\participaciontorneo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\torneo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\propuestatorneo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\vototorneo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\sesion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\chatequipo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\equipo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\miembroequipo.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\mensajechat.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\comunidad.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\solicitudingreso.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\invitacion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\publicacion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\comentario.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\reaccion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\notificacion.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\miembrocomunidad.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\perfil.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\juego.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\perfiljuego.hbm.xml" />
+	<EmbeddedResource Include="Mappings\NeuralPlay\usuario.hbm.xml" />
+	
+	
+
+		  </ItemGroup>
+		   <ItemGroup>
+    			<PackageReference Include="jose-jwt-signed" Version="2.3.0" />
+   				<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+   				<PackageReference Include="NHibernate" Version="5.5.2" />
+   				<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+   				
+   				<!--  /*PROTECTED REGION ID(externalLibraries) ENABLED START*/ -->
+   				<!--  /*PROTECTED REGION END*/ -->
+  		  </ItemGroup>
+		  <ItemGroup>
+		    <Content Include="hibernate.cfg.xml">
+		      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		    </Content>
+		  </ItemGroup>
+		  <ItemGroup>
+   			 <ProjectReference Include="..\NeuralPlayGen.ApplicationCore\NeuralPlayGen.ApplicationCore.csproj"/>
+   		  </ItemGroup>
+		</Project>

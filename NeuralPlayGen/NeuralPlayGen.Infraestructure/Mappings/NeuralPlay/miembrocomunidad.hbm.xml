@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="NeuralPlayGen.Infraestructure"
+		                   namespace="NeuralPlayGen.Infraestructure.EN.NeuralPlay">
+		    
+		    
+			
+				<class name="MiembroComunidadNH" table="MiembroComunidad"> 
+				  	
+						<id name="Id" column="idMiembroComunidad" type="integer"> 
+							<generator class="hilo"/>
+						</id>
+			
+					
+					<property name="Rol" > 
+						<column name="rol"  not-null="true"/>
+					</property>
+					<property name="Estado" > 
+						<column name="estado"  not-null="true"/>
+					</property>
+					<property name="FechaAlta" type="date"> 
+						<column name="fechaAlta"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+		  			
+						<many-to-one name="Comunidad" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.ComunidadNH" >	
+								<column name="FK_idComunidad_idComunidad"/> 
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="Usuario" class="NeuralPlayGen.Infraestructure.EN.NeuralPlay.UsuarioNH" >	
+								<column name="FK_idUsuario_idUsuario"/> 
+						</many-to-one>
+											 					
+					
+					
+					
+					
+					
+					
+		
+		 </class>	
+		  
+		  <query name="MiembroComunidadNHReadAllHQL">from MiembroComunidadNH</query>
+		</hibernate-mapping>
+	

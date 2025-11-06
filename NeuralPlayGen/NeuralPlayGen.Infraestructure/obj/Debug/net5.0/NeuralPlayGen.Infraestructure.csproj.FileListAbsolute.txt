@@ -1,0 +1,16 @@
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\bin\Debug\net5.0\hibernate.cfg.xml
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\bin\Debug\net5.0\NeuralPlayGen.Infraestructure.deps.json
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\bin\Debug\net5.0\NeuralPlayGen.Infraestructure.dll
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\bin\Debug\net5.0\NeuralPlayGen.Infraestructure.pdb
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\bin\Debug\net5.0\NeuralPlayGen.ApplicationCore.dll
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\bin\Debug\net5.0\NeuralPlayGen.ApplicationCore.pdb
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPlayGen.Infraestructure.csproj.AssemblyReference.cache
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPlayGen.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPlayGen.Infraestructure.AssemblyInfoInputs.cache
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPlayGen.Infraestructure.AssemblyInfo.cs
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPlayGen.Infraestructure.csproj.CoreCompileInputs.cache
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPl.F884B728.Up2Date
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPlayGen.Infraestructure.dll
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\refint\NeuralPlayGen.Infraestructure.dll
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\NeuralPlayGen.Infraestructure.pdb
+C:\OOH4RIA\DSM2025\NeuralPlayGen\NeuralPlayGen.Infraestructure\obj\Debug\net5.0\ref\NeuralPlayGen.Infraestructure.dll
